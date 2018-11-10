@@ -1,0 +1,7 @@
+.fc-condition {
+    display: flex;
+}
+
+.fc-condition input {
+    width: 120px;
+}

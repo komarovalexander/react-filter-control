@@ -1,0 +1,12 @@
+.fc-group-content {
+    padding-left: 20px;
+}
+
+.fc-group .fc-group-button-icon {
+    opacity: .6;
+    font-weight: 100;
+}
+
+.fc-group .fc-group-button-icon:hover {
+    opacity: .8;
+}
