@@ -3,6 +3,7 @@ module.exports = {
     "parser": "babel-eslint",
     "rules":{
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "no-shadow": "off"
     },
     "env": {
         "jest": true,
