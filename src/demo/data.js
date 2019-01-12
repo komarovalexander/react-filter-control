@@ -26,37 +26,37 @@ export const groups = [{
 }];
 
 export const filterValue = {
-  groupName: "and",
+  groupName: 'and',
   items: [
     {
-      key: "1",
-      field: "field1",
-      operator: "=",
-      value: "1"
+      key: '1',
+      field: 'field1',
+      operator: '=',
+      value: '1',
     },
     {
-      key: "2",
-      field: "field1",
-      operator: "=",
-      value: "2"
+      key: '2',
+      field: 'field1',
+      operator: '=',
+      value: '2',
     },
     {
-      key: "3",
-      groupName: "or",
+      key: '3',
+      groupName: 'or',
       items: [
         {
-          key: "3-1",
-          field: "field1",
-          operator: "<>",
-          value: "3"
+          key: '3-1',
+          field: 'field1',
+          operator: '<>',
+          value: '3',
         },
         {
-          key: "3-2",
-          field: "field2",
-          operator: "=",
-          value: "1"
-        }
-      ]
-    }
-  ]
+          key: '3-2',
+          field: 'field2',
+          operator: '=',
+          value: '1',
+        },
+      ],
+    },
+  ],
 };
