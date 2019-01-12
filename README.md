@@ -55,8 +55,8 @@ ReactDOM.render(<App />, document.querySelector("#root"));
 | Name | Type | Description |
 | --- | --- | --- |
 | fields | [<code>Array.&lt;Field&gt;</code>](#Field) | The fields settings |
-| filterValue | [<code>FilterValue</code>](#FilterValue) | The fields settings |
-| groups | <code>Array.&lt;Group&gt;</code> | The fields settings |
+| filterValue | [<code>FilterValue</code>](#FilterValue) | The filterValue settings |
+| groups | [<code>Array.&lt;Group&gt;</code>](#Group) | The groups settings |
 | onFilterValueChanged | <code>event</code> | The filter value changed handler |
 
 <a name="FilterValue"></a>
@@ -102,6 +102,16 @@ ReactDOM.render(<App />, document.querySelector("#root"));
 | name | <code>string</code> | Field name |
 | caption | <code>string</code> | Field caption |
 | operators | [<code>Array.&lt;Operator&gt;</code>](#Operator) | Field operators |
+
+<a name="Group"></a>
+
+### Group : <code>Object</code>
+**Properties**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| name | <code>string</code> | Group name |
+| caption | <code>string</code> | Group caption |
 
 <a name="Operator"></a>
 
