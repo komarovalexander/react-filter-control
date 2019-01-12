@@ -1,10 +1,15 @@
 {
   "name": "react-filter-control",
-  "version": "0.1.15",
+  "version": "0.1.19",
   "main": "dist/react-filter-control.min.js",
   "author": {
     "name": "Alexander Komarov",
     "email": "alexander.s.komarov@gmail.com"
+  },
+  "license" : "MIT",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/komarovalexander/react-filter-control"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",

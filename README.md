@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/komarovalexander/react-filter-control.svg?branch=master)](https://travis-ci.com/komarovalexander/react-filter-control)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/komarovalexander/react-filter-control/blob/master/LICENSE) [![Build Status](https://travis-ci.com/komarovalexander/react-filter-control.svg?branch=master)](https://travis-ci.com/komarovalexander/react-filter-control)
 
 # React Filter Control
 The React component for building the composite filter criteria
@@ -6,7 +6,7 @@ The React component for building the composite filter criteria
 [Demo](https://codesandbox.io/s/4xk994jovw)
 
 ## Overview
-![Filter Control](./static/filter-control.png)
+![Filter Control](https://github.com/komarovalexander/react-filter-control/raw/master/static/filter-control.png)
 
 ## Installation
 npm
