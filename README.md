@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/komarovalexander/react-filter-control.svg?branch=master)](https://travis-ci.com/komarovalexander/react-filter-control)
+
 # React Filter Control
 The React component for building the composite filter criteria
 
