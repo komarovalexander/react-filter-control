@@ -1,10 +1,10 @@
 # React Filter Control
-A React component for building the composite filter criteria
+The React component for building the composite filter criteria
+
+[Demo](https://codesandbox.io/s/4xk994jovw)
 
 ## Overview
 ![Filter Control](./static/filter-control.png)
-
-[Demo](https://codesandbox.io/s/4xk994jovw)
 
 ## Installation
 npm
