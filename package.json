@@ -6,10 +6,10 @@
     "name": "Alexander Komarov",
     "email": "alexander.s.komarov@gmail.com"
   },
-  "license" : "MIT",
+  "license": "MIT",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/komarovalexander/react-filter-control"
+    "type": "git",
+    "url": "https://github.com/komarovalexander/react-filter-control"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
@@ -54,9 +54,12 @@
     "lint": "eslint src/",
     "lint-fix": "eslint src/ --fix",
     "test": "jest",
+    "coverage": "react-scripts test --env=jsdom --coverage",
+    "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls",
     "eject": "react-scripts eject"
   },
   "dependencies": {
+    "coveralls": "^3.0.2",
     "jest-transform-css": "^2.0.0",
     "prop-types": "^15.6.2",
     "react": "^16.5.2",

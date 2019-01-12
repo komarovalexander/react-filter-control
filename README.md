@@ -1,5 +1,5 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/komarovalexander/react-filter-control/blob/master/LICENSE) [![Build Status](https://travis-ci.com/komarovalexander/react-filter-control.svg?branch=master)](https://travis-ci.com/komarovalexander/react-filter-control)
-
+[![Coverage Status](https://coveralls.io/repos/github/komarovalexander/react-filter-control/badge.svg?branch=master)](https://coveralls.io/github/komarovalexander/react-filter-control?branch=master)
 # React Filter Control
 The React component for building the composite filter criteria
 
