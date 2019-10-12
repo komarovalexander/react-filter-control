@@ -59,7 +59,7 @@ describe('filter data', () => {
         field: 'field2',
         operator: '=',
         value: 'text 2'
-      },{
+      }, {
         field: 'id',
         operator: '=',
         value: 4
@@ -105,7 +105,7 @@ describe('filter data', () => {
         field: 'field2',
         operator: '=',
         value: 'text 3'
-      },{
+      }, {
         field: 'id',
         operator: '=',
         value: 4
