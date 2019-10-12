@@ -41,6 +41,4 @@ export declare interface IFilterControlProps {
 
 declare const FilterControl: React.FunctionComponent<IFilterControlProps> = (props: IFilterControlProps) => {};
 
-export declare const filterData = (data: any[], filterValue: IFilterControlFilterValue): any[] => {};
-
 export default FilterControl;
