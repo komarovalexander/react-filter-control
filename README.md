@@ -90,7 +90,7 @@ ReactDOM.render(<App />, document.querySelector("#root"));
 | key | <code>key</code> | Item key |
 | field | <code>string</code> | Field |
 | operator | <code>string</code> | Operator |
-| value | <code>string</code> | Value |
+| value | <code>any</code> | Value |
 
 <a name="Field"></a>
 

@@ -7,7 +7,6 @@ const AddButton = ({ onClick }) => (
     <div
       className="fc-group-button-icon fc-button-add"
       onClick={onClick}
-      onKeyDown={onClick}
       tabIndex="0"
       aria-label="Add"
       role="button"
@@ -25,7 +24,6 @@ const RemoveButton = ({ onClick }) => (
   <div
     className="fc-group-button-icon fc-button-remove"
     onClick={onClick}
-    onKeyDown={onClick}
     tabIndex="0"
     aria-label="Remove"
     role="button"
@@ -40,7 +38,6 @@ const Button = ({ text, color, onClick }) => (
     className={`fc-dropdownmenu-button fc-button-color-${color || 'default'}`}
     aria-haspopup="true"
     onClick={onClick}
-    onKeyDown={onClick}
     tabIndex="0"
     role="button"
   >
@@ -81,7 +78,6 @@ const Menu = ({
             key={keyField ? item[keyField] : index}
             selected={index === activeIndex}
             onClick={onClick}
-            onKeyDown={onClick}
             tabIndex="0"
             role="button"
           >
@@ -93,7 +89,6 @@ const Menu = ({
     <div
       className="fc-dropdownmenu-contextmenu-background"
       onClick={handleClose}
-      onKeyDown={handleClose}
       role="button"
       tabIndex="0"
     />
