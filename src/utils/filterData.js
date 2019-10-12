@@ -1,8 +1,8 @@
 export const isEmpty = value => (value == null || value.length === 0);
 
 const contains = (data, item) => data[item.field].includes(item.value);
-const equals = (data, item) => data[item.field]
-  .toString().toLowerCase() === item.value.toLowerCase();
+const equals = (data, item) => ((typeof item.value === 'string') ? data[item.field].toLowerCase().includes(item.value.toLowerCase())
+  : data[item.field] === item.value);
 const notEqual = (data, item) => !equals(data, item);
 const more = (data, item) => data[item.field] > item.value;
 const moreOrEqual = (data, item) => data[item.field] >= item.value;
