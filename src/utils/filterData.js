@@ -1,8 +1,8 @@
 export const isEmpty = value => (value == null || value.length === 0);
 
 const contains = (data, item) => data[item.field].includes(item.value);
-const equals = (data, item) => ((typeof item.value === 'string') ? data[item.field].toLowerCase().includes(item.value.toLowerCase())
-  : data[item.field] === item.value);
+const equals = (data, item) => data[item.field]
+  .toString().toLowerCase() === item.value.toLowerCase();
 const notEqual = (data, item) => !equals(data, item);
 const more = (data, item) => data[item.field] > item.value;
 const moreOrEqual = (data, item) => data[item.field] >= item.value;
@@ -26,12 +26,12 @@ export const filterItem = (data, filter) => {
 };
 
 // eslint-disable-next-line no-use-before-define
-export const filterGroup = (data, name, items) => (name.toLowerCase() === 'or' ? filterGroupOr(data, items) : filterGroupAnd(data, items));
+export const filterGroup = (data, groupName, items) => (groupName.toLowerCase() === 'or' ? filterGroupOr(data, items) : filterGroupAnd(data, items));
 
 export const filterGroupOr = (data, items) => {
   const filteredData = items.reduce((initialData, item) => {
     if (item.items) {
-      const grouped = filterGroup(data, item.name, item.items);
+      const grouped = filterGroup(data, item.groupName, item.items);
       return initialData.concat(grouped.filter(d => initialData.indexOf(d) < 0));
     }
     return initialData.concat(data.filter(d => initialData.indexOf(d) < 0 && filterItem(d, item)));
@@ -41,11 +41,11 @@ export const filterGroupOr = (data, items) => {
 
 export const filterGroupAnd = (data, items) => {
   return items.reduce((initialData, item) => {
-    if (item.items) return filterGroup(initialData, item.name, item.items);
+    if (item.items) return filterGroup(initialData, item.groupName, item.items);
     return initialData.filter(d => filterItem(d, item));
   }, data);
 };
 
 export const filterData = (data, filterValue) => {
-  return filterGroup(data, filterValue.name, filterValue.items);
+  return filterGroup(data, filterValue.groupName, filterValue.items);
 };

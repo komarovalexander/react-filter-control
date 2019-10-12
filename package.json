@@ -1,6 +1,6 @@
 {
   "name": "react-filter-control",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "main": "dist/react-filter-control.min.js",
   "author": {
     "name": "Alexander Komarov",
@@ -39,12 +39,12 @@
     "react-scripts": "^3.2.0",
     "react-test-renderer": "^16.6.1",
     "rollup": "^0.66.6",
-    "rollup-plugin-babel": "^4.0.3",
-    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^9.3.4",
     "rollup-plugin-node-resolve": "^3.4.0",
     "rollup-plugin-postcss": "^2.0.3",
     "rollup-plugin-strip-prop-types": "^1.0.2",
-    "rollup-plugin-uglify": "^6.0.0"
+    "rollup-plugin-uglify": "^6.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
