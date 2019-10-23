@@ -1,6 +1,6 @@
 {
   "name": "react-filter-control",
-  "version": "2.0.8",
+  "version": "2.1.0",
   "main": "dist/react-filter-control.min.js",
   "author": {
     "name": "Alexander Komarov",
