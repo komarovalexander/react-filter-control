@@ -34,7 +34,7 @@ export declare interface IFilterControlFilterValue {
 
 export declare interface IFilterControlProps {
   fields: IField[];
-  groups: any[];
+  groups?: any[];
   filterValue: any;
   onFilterValueChanged: (value: any) => void;
 }
