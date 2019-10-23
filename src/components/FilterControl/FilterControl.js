@@ -94,7 +94,7 @@ FilterControl.defaultProps = {
  * @property {key} key - Item key
  * @property {string} field - Field
  * @property {string} operator - Operator
- * @property {string} value - Value
+ * @property {any} value - Value
  */
 
 /**

@@ -3,7 +3,7 @@
 # React Filter Control
 The React component for building the composite filter criteria
 
-[Demo](https://codesandbox.io/s/4xk994jovw)
+[Demo (JS)](https://codesandbox.io/s/4xk994jovw)    |    [Demo (TS)](https://codesandbox.io/s/react-typescript-uhtxt)
 
 ## Overview
 ![Filter Control](https://github.com/komarovalexander/react-filter-control/raw/master/static/filter-control.png)
@@ -90,7 +90,7 @@ ReactDOM.render(<App />, document.querySelector("#root"));
 | key | <code>key</code> | Item key |
 | field | <code>string</code> | Field |
 | operator | <code>string</code> | Operator |
-| value | <code>string</code> | Value |
+| value | <code>any</code> | Value |
 
 <a name="Field"></a>
 
