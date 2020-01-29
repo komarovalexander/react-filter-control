@@ -5,6 +5,7 @@ The React component for building the composite filter criteria
 
 [Demo (JS)](https://codesandbox.io/s/4xk994jovw)    |    [Demo (TS)](https://codesandbox.io/s/react-typescript-uhtxt)    |   
 [Together With Data Table](https://komarovalexander.github.io/ka-table/#/filter-extended)
+
 ## Overview
 ![Filter Control](https://github.com/komarovalexander/react-filter-control/raw/master/static/filter-control.png)
 
