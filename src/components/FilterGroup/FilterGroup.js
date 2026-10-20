@@ -5,8 +5,24 @@ import deepCopy from '../../utils/deepCopy';
 import FilterGroupSettingsRow from '../FilterGroupSettingsRow';
 import './FilterGroup.css';
 
+const defaultGroups = [{
+  name: 'and',
+  caption: 'And',
+}, {
+  name: 'or',
+  caption: 'Or',
+}];
+const defaultFilterValue = {
+  groupName: 'and',
+  items: [],
+};
+
 const FilterGroup = ({
-  fields, groups, filterValue, onFilterValueChanged, removeClick,
+  fields,
+  groups = defaultGroups,
+  filterValue = defaultFilterValue,
+  onFilterValueChanged,
+  removeClick,
 }) => {
   const onItemValueChanged = (index, newValue) => {
     const newFilterValue = deepCopy(filterValue);
@@ -77,22 +93,6 @@ FilterGroup.propTypes = {
   }),
   onFilterValueChanged: PropTypes.func,
   removeClick: PropTypes.func,
-};
-
-FilterGroup.defaultProps = {
-  groups: [{
-    name: 'and',
-    caption: 'And',
-  }, {
-    name: 'or',
-    caption: 'Or',
-  }],
-  filterValue: {
-    groupName: 'and',
-    items: [],
-  },
-  onFilterValueChanged: undefined,
-  removeClick: undefined,
 };
 
 

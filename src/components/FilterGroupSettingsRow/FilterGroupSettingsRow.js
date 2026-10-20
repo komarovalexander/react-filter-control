@@ -5,8 +5,24 @@ import DropDownMenu from '../DropDownMenu';
 import './FilterGroupSettingsRow.css';
 import Consumer from '../../context';
 
+const defaultGroups = [{
+  name: 'and',
+  caption: 'And',
+}, {
+  name: 'or',
+  caption: 'Or',
+}];
+const defaultFilterValue = {
+  groupName: 'and',
+  items: [],
+};
+
 const FilterGroupSettingsRow = ({
-  filterValue, fields, onFilterValueChanged, groups, removeClick,
+  filterValue = defaultFilterValue,
+  fields,
+  onFilterValueChanged,
+  groups = defaultGroups,
+  removeClick,
 }) => {
   const onGroupMenuItemClick = (newGroupName) => {
     const newFilterValue = deepCopy(filterValue);
@@ -98,22 +114,6 @@ FilterGroupSettingsRow.propTypes = {
   }),
   onFilterValueChanged: PropTypes.func,
   removeClick: PropTypes.func,
-};
-
-FilterGroupSettingsRow.defaultProps = {
-  groups: [{
-    name: 'and',
-    caption: 'And',
-  }, {
-    name: 'or',
-    caption: 'Or',
-  }],
-  filterValue: {
-    groupName: 'and',
-    items: [],
-  },
-  onFilterValueChanged: undefined,
-  removeClick: undefined,
 };
 
 export default FilterGroupSettingsRow;

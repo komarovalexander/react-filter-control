@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './controls.css';
 
+// the default values are the default parameters: React 19 doesn't use defaultProps of function components
 const AddButton = ({ onClick }) => (
   <div>
     <div
@@ -15,9 +16,6 @@ const AddButton = ({ onClick }) => (
 );
 AddButton.propTypes = {
   onClick: PropTypes.func,
-};
-AddButton.defaultProps = {
-  onClick: undefined,
 };
 
 const RemoveButton = ({ onClick }) => (
@@ -33,7 +31,7 @@ RemoveButton.propTypes = {
   onClick: PropTypes.func.isRequired,
 };
 
-const Button = ({ text, color, onClick }) => (
+const Button = ({ text = '', color = '', onClick }) => (
   <div
     className={`fc-dropdownmenu-button fc-button-color-${color || 'default'}`}
     aria-haspopup="true"
@@ -51,11 +49,6 @@ Button.propTypes = {
   onClick: PropTypes.func.isRequired,
 };
 
-Button.defaultProps = {
-  text: '',
-  color: '',
-};
-
 const Input = ({ value, onChange }) => (
   <input value={value} onChange={onChange} className="fc-value-editor" />
 );
@@ -66,7 +59,13 @@ Input.propTypes = {
 };
 
 const Menu = ({
-  visible, handleClose, menuItems, handleMenuItemClick, textField, keyField, activeIndex,
+  visible = false,
+  handleClose,
+  menuItems,
+  handleMenuItemClick,
+  textField = '',
+  keyField = '',
+  activeIndex = 0,
 }) => (visible ? (
   <div className="fc-dropdownmenu-contextmenu">
     {
@@ -103,15 +102,6 @@ Menu.propTypes = {
   textField: PropTypes.string,
   keyField: PropTypes.string,
   activeIndex: PropTypes.number,
-};
-
-Menu.defaultProps = {
-  visible: false,
-  handleClose: undefined,
-  handleMenuItemClick: undefined,
-  textField: '',
-  keyField: '',
-  activeIndex: 0,
 };
 
 const FCContext = React.createContext({

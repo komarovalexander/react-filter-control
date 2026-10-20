@@ -19,13 +19,14 @@ yarn
 ```sh
 yarn add react-filter-control
 ```
+`react` 16.3 or newer is a peer dependency: the component uses the React of the application.
 
 ## Usage
 ### A basic example
 
 ```js
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import FilterControl from "react-filter-control";
 import { fields, filterValue } from "./data.js";
 
@@ -43,7 +44,7 @@ const App = () => {
   );
 };
 
-ReactDOM.render(<App />, document.querySelector("#root"));
+createRoot(document.querySelector("#root")).render(<App />);
 ```
 
 [Open Example in CodeSandbox](https://codesandbox.io/s/mqnmlypmkp)

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './ContextMenu.css';
 
 const ContextMenu = ({
-  items, visible, keyField, activeIndex, onItemClick, textField,
+  items, visible = false, keyField = '', activeIndex = 0, onItemClick, textField = '',
 }) => (
   <div className={`fc-contextmenu${visible ? '' : ' fc-hidden'}`}>
     {
@@ -34,13 +34,6 @@ ContextMenu.propTypes = {
   activeIndex: PropTypes.number,
   onItemClick: PropTypes.func.isRequired,
   textField: PropTypes.string,
-};
-
-ContextMenu.defaultProps = {
-  visible: false,
-  keyField: '',
-  activeIndex: 0,
-  textField: '',
 };
 
 export default ContextMenu;
