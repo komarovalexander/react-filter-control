@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './controls.css';
 
-// the default values are the default parameters: React 19 doesn't use defaultProps of function components
+// the default values are the default parameters:
+// React 19 doesn't use defaultProps of function components
 const AddButton = ({ onClick }) => (
   <div>
     <div

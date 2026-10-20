@@ -20,5 +20,4 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 dist/react-filter-control.min.js
-yarn.lock
 package-lock.json
